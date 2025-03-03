@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireStrings - গিটার ই-কমার্স</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .welcome {
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .fire-emoji {
+            font-size: 1.5em;
+            animation: fire 1s infinite alternate;
+        }
+        @keyframes fire {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); color: red; }
+        }
+        .glow-text {
+            font-size: 1.8em;
+            color: cyan;
+            text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px blue;
+            margin: 10px 0;
+        }
+        .button {
+            background: linear-gradient(45deg, red, yellow);
+            padding: 15px 30px;
+            border: none;
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: pulse 1.5s infinite alternate;
+            text-decoration: none;
+            display: inline-block;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome">
+            <span class="fire-emoji">🔥</span> স্বাগতম FireStrings-এ <span class="fire-emoji">🔥</span>
+        </h1>
+        <p class="glow-text">Aso Kaku! 🎸</p>
+        <a href="product.html" class="button">শপিং শুরু করুন</a>
+    </div>
+</body>
+</html>
